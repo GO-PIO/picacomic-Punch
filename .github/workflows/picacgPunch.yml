@@ -32,6 +32,7 @@ jobs:
       with:
         dotnet-version: '8.0.x'
     -run: rm -rf bin obj|dotnet restore|dotnet build
+
     - name: Build
       run: dotnet build -c Release
       
