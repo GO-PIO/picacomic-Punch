@@ -32,7 +32,7 @@ jobs:
       with:
         dotnet-version: '5.0.x'
     - run: sudo apt-get update
-    - run: sudo apt-get install libssl-dev  
+    - run: sudo apt-get install libssl1.0-dev  
     - name: Build
       run: dotnet build -c Release
       
